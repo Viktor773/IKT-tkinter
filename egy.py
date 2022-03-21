@@ -1,1 +1,16 @@
-#teszt
+from tkinter import *
+foablak = Tk()
+Elso = Label(foablak, text="Első mező")
+Elso.pack()
+ElsoMezo = Entry(foablak, text="Első mező")
+ElsoMezo.pack()
+Masodik = Label(foablak, text="Második mező")
+Masodik.pack()
+MasodikMezo = Entry(foablak,text="Második mező")
+MasodikMezo.pack()
+Harmadik = Label(foablak, text="Harmadik mező")
+Harmadik.pack()
+HarmadikMezo = Entry(foablak, text="Harmadik mező")
+HarmadikMezo.pack()
+
+foablak.mainloop()
