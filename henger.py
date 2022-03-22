@@ -8,6 +8,8 @@ Magassag=Label(foablak,text="Magasság")
 Magassag.pack()
 Magassagimport=Entry(foablak)
 Magassagimport.pack()
+Gomb = Button(foablak, text="Kiszámít")
+Gomb.pack()
 
 
 foablak.mainloop()
