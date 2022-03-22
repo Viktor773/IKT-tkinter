@@ -1,5 +1,14 @@
 from tkinter import *
 foablak = Tk()
+
+def kiszamit():
+    p = 3.14
+    r = int(Sugarimport.get())
+    m = int(Magassagimport.get())
+    e = p*r**2*m
+    Terfogatkiad.delete(0, END)
+    Terfogatkiad.insert(0+int(e))
+
 Sugar = Label(foablak, text="Sugár")
 Sugar.pack()
 Sugarimport = Entry(foablak)
@@ -8,7 +17,7 @@ Magassag=Label(foablak,text="Magasság")
 Magassag.pack()
 Magassagimport=Entry(foablak)
 Magassagimport.pack()
-Gomb = Button(foablak, text="Kiszámít")
+Gomb = Button(foablak, text="Kiszámít", command=kiszamit)
 Gomb.pack()
 Terfogat = Label(foablak, text="Térfogat")
 Terfogat.pack()
