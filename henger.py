@@ -7,7 +7,7 @@ def kiszamit():
     m = int(Magassagimport.get())
     e = p*r**2*m
     Terfogatkiad.delete(0, END)
-    Terfogatkiad.insert(0+int(e))
+    Terfogatkiad.insert(0, 'Összeg: '+str(e))
 
 Sugar = Label(foablak, text="Sugár")
 Sugar.pack()
