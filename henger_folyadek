@@ -1,0 +1,10 @@
+from tkinter import *
+try:
+    liter = int(input("Add meg a bor mennyiségét literben: "))
+    magassag = int(input("Add meg a hordó magasságát: "))
+    sugar = int(input("Add meg a sugarat: "))
+except ValueError:
+    print(f"Valamelyik nem jó, ezért sajnos a rossz programozó miatt újra kell írnod az egészet :'(")
+    liter = int(input("Add meg a bor mennyiségét literben: "))
+    magassag = int(input("Add meg a hordó magasságát: "))
+    sugar = int(input("Add meg a sugarat: "))
